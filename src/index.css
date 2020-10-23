@@ -1,13 +1,103 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+
+}
+#salesCard {
+ transition: transform .5s ;
+}
+#salesCard:hover {
+   transform: scale(1.05);
+   box-shadow: 2px 2px 3px 3px rgb(226, 223, 223);
+}
+@media only screen and (max-width: 1240px) {
+  input {
+    width: 20rem !important;
+  }
+  
+  @media only screen and (max-width: 920px) {
+    input {
+      width: 10rem !important
+    }
+    @media only screen and (max-width: 767px) {
+     input {
+      width: 30rem !important;
+      margin-left: 35% !important;
+     } 
+     #image {
+       margin-left: 35% !important;
+     }
+     #headerIcon {
+       padding-left: 30% !important;
+       padding-right: 20% !important;
+       padding-bottom: 30px !important;
+     }
+     @media only screen and (max-width: 613px){
+       input {
+         width: 20rem !important;
+       }
+       @media only screen and (max-width: 576px) {
+         input {
+           width: 10rem !important;
+           margin-left: 90% !important;
+           
+         }
+         #mybtn {
+           margin-left: 30%;
+         }
+         #headerIcon {
+           display: inline-block !important;
+           margin-left: 12% !important;
+         }
+         #SidebarLeft{
+           padding-left: 43% !important;
+         }
+         #SidebarRight {
+           padding-left: 40% !important;
+           padding-bottom: 10% !important;
+         }
+         #row-clone {
+           margin-top: -40px !important;
+           padding-left: 20% !important;
+         }
+         #shelf {
+          margin-right: 50% !important; 
+         }
+         #salesCard {
+           padding-left: 20% !important;
+         }
+         #footer {
+           padding-left: 20% !important;
+         }
+         #food-fest {
+           margin-left: 35% !important;
+         }
+         
+       }
+     }
+    }
+  }
+   
+}
+@media only screen and (max-width: 1126px) {
+  #row-clone {
+    margin-top: -40px !important;
+    
+  }
+}
+@media only screen and (max-width: 991px) {
+  #SidebarLeft {
+    padding-left: 30% !important;
+  }
+  #SidebarRight {
+    padding-left: 40% !important;
+  }
+  #row-clone {
+    margin-top: -40px !important;
+    padding-left: 20% !important;
+  }
+  #shelf {
+    margin-left: 30% !important;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
